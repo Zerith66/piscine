@@ -1,17 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 08:55:12 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/17 09:47:09 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/17 09:08:57 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/17 09:45:47 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void ft_putchar (char c)
+void ft_print_reverse_alphabet(void)
 {
-	write(1,&c,1);
+	int c;
+	c='z';
+	while (c<='a')
+	{
+		write (1,&c,1);
+		c--;
+	}
 }
