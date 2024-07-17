@@ -1,31 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 09:08:57 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/17 14:03:57 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/17 11:00:31 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/17 14:16:08 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_reverse_alphabet(void)
-{
-	int	c;
-
-	c = 'z';
-	while (c >= 'a')
-	{
-		write (1, &c, 1);
-		c--;
-	}
-}
-
-/*void main (void)
-{
-	ft_print_reverse_alphabet();
-}
-*/
+#include<unistd.h>
