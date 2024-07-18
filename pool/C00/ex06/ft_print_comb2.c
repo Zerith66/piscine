@@ -6,61 +6,46 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 18:59:51 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/18 09:32:38 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/18 14:52:42 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void print(int a,int b,int c,int d)
+void	print(int z)
 {
-	write(1, &d, 1);
-	write(1, &c, 1);
-	write(1, &" ", 1);
-	write(1, &b, 1);
-	write(1, &a, 1);
-	if (d!=58)
-	{
-		write(1, &", ", 1);
-	}
+	write(1, &z, 1);
 }
 
-void try(int *a,int *b,int *c,int *d)
-{
-	if (*a == 10)
-	{
-		*a=0;
-		*b++;
-	}
-	if (*b == 10)
-	{
-		*b = 0;
-		*c++;
-	}
-	if (*c == 10)
-	{
-		*c = 0;
-		*d++;
-	}
-}
 void	ft_print_comb2(void)
 {
-	int	tmp;
+	int	a;
+	int	b;
 
-	tmp=0;
-	int *a=&tmp;
-	int *b=&tmp;
-	int *c=&tmp;
-	int *d=&tmp;
-	while (*d!=10)
+	a = 0;
+	b = 0;
+	while (b <= 98)
 	{
-		try(&a,&b,&c,&d);
-		print(*a + 48, *b + 48,*c + 48, *d + 48);
-		*a++;
+		if (a <= 99)
+		{
+			print(b / 10 + 48);
+			print(b % 10 + 48);
+			write(1, " ", 1);
+			print(a / 10 + 48);
+			print(a % 10 + 48);
+			if (b != 98)
+			{
+				write(1, ", ", 2);
+			}
+		}
+
+		a++;
 	}
 }
 
-void main (void)
+
+/*void	main(void)
 {
 	ft_print_comb2();
 }
+*/
