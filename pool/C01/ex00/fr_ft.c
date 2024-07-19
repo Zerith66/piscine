@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 15:07:29 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/18 16:50:53 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 08:30:50 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,11 @@ void	ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-void main void()
+/*int	main(void)
 {
-	
-}
+	int	*a;
+
+	*a = 17;
+	ft_ft(&a);
+	return 0;
+}*/
