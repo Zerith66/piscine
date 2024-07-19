@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate.c                                      :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/18 15:24:35 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 09:34:46 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/19 09:54:09 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/19 09:59:06 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+#include <stddef.h>
+
+void	ft_strlen(char*txt)
 {
-	*********nbr = 42;
+	int	i;
+
+	i = 0;
+	while (txt[i] != '\0')
+	{
+        write (1, txt[i]);
+		i++;
+	}
 }
 
-/*int	main(void)
+/*
+int	main(void)
 {
-	int	nb;
-	int	*nb1;
-	int	**nb2;
-	int	***nb3;
-	int	****nb4;
-	int	*****nb5;
-	int	******nb6;
-	int	*******nb7;
-	int	********nb8;
-	int *********nb9;
-
-	nb = 42;
-	*nb1 = &nb;
-	**nb2 = &nb;
-	***nb3 = &nb;
-	****nb4 = &nb;
-	*****nb5 = &nb;
-	******nb6 = &nb;
-	*******nb7 = &nb;
-	********nb8 = &nb;
-
-	ft_ultimate_ft();
+	
 }*/
