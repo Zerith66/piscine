@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 15:24:35 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 09:34:46 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 11:07:35 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,13 @@ void	ft_ultimate_ft(int *********nbr)
 
 	nb = 42;
 	*nb1 = &nb;
-	**nb2 = &nb;
-	***nb3 = &nb;
-	****nb4 = &nb;
-	*****nb5 = &nb;
-	******nb6 = &nb;
-	*******nb7 = &nb;
-	********nb8 = &nb;
+	**nb2 = &nb1;
+	***nb3 = &nb2;
+	****nb4 = &nb3;
+	*****nb5 = &nb4;
+	******nb6 = &nb5;
+	*******nb7 = &nb6;
+	********nb8 = &nb7;
 
 	ft_ultimate_ft();
 }*/

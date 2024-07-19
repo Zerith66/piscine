@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 15:07:29 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 08:30:50 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 11:07:33 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,19 @@ void	ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-/*int	main(void)
+/*#include <unistd.h>
+int	main(void)
 {
-	int	*a;
+	int	a;
 
-	*a = 17;
+	a = 17;
 	ft_ft(&a);
-	return 0;
+	if (a!=42)
+	{
+		write (1, "N\n", 2);
+	}
+	else
+	{
+		write (1, "Y\n",2 );
+	}
 }*/

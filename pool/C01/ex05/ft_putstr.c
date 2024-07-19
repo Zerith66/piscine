@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 09:54:09 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 09:59:06 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 10:57:26 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_strlen(char*txt)
 	i = 0;
 	while (txt[i] != '\0')
 	{
-        write (1, txt[i]);
+		write (1, txt[i]);
 		i++;
 	}
 }
