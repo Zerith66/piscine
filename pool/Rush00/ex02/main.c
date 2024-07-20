@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 15:54:34 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/20 18:37:49 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcpy(char *dest, char *src)
-{
-    int i;
+void	rush(int *a, int *b);
 
-    i = 0;
-    while (src != "\0")
-    {
-        dest[i] = src[i];
-        i++;
-    }
+int	main(void)
+{
+	int a;
+	int b;
+
+	a = 8;
+	b = 9;
+	rush(&a, &b);
+	return (0);
 }
-
-/*int main(void)
-{
-    ft_strcpy();
-}*/

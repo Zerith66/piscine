@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 15:54:34 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/20 17:12:53 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/20 17:37:45 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcpy(char *dest, char *src)
+void    ft_putchar(int *a)
 {
-    int i;
+    int	o;
 
-    i = 0;
-    while (src != "\0")
-    {
-        dest[i] = src[i];
-        i++;
-    }
+	o = 0;
+	if (*a > 1)
+	{
+		write(1, "o", 1);
+		o++;
+		while (o <= *a - 1)
+		{
+			write(1, "-", 1);
+			o++;
+		}
+		write(1, "o", 1);
+	}
+	else
+	{
+		write(1, "o", 1);
+	}
 }
-
-/*int main(void)
-{
-    ft_strcpy();
-}*/

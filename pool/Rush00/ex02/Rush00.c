@@ -3,32 +3,47 @@
 /*                                                        :::      ::::::::   */
 /*   Rush00.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 07:47:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 11:45:35 by hle-hena         ###   ########.fr       */
+/*   Updated: 2024/07/20 18:39:15 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putlim(int *b, int *i);
-void	ft_putchar(int *a, int *b, int *i);
+void ft_putchar(char *a);
 
 void	rush(int *a, int *b)
 {
-	int	*i;
-
-	i = b;
-	while (*i >= 1)
+	int	i;
+	int	o;
+	
+	i = 0;
+	o = 0;
+	while (o != 0)
 	{
-		if (*i == 0 || *i == *b)
+		if (i == 0 && o == *a)
 		{
-			ft_putchar(a, b, i);
-			i--;
+			ft_putchar("A");
+			i++;
+			while (*b - 1 >i)
+			{
+				ft_putchar("B");
+				i++;
+			}
+			ft_putchar("A");
+			o++;
 		}
-		while (*i != *b - 1)
+		if (*a > 1 )
 		{
-			ft_putlim(b, i);
+			i = *b - 2;
+			ft_putchar("B");
+			while (*b - 1 >i)
+			{
+				ft_putchar(" ");
+				i--;
+			}
+			ft_putchar("B");
+			o++;
 		}
-		*i = *i - 1;
 	}
 }

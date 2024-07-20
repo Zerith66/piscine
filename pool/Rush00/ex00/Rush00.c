@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   Rush00.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 11:45:51 by hle-hena         ###   ########.fr       */
+/*   Created: 2024/07/20 17:13:05 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/20 17:37:51 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int *a, int *b);
-
-int	main(void)
+void    rush00(int *a, int *b)
 {
-	int a = 2;
-	int b = 2;
-	
-	rush(&a, &b);
-	return (0);
+    int	*i;
+
+	i = b;
+	while (*i >= 1)
+	{
+		if (*i == 0 || *i == *b)
+		{
+			ft_putchar(a, b, i);
+			i--;
+		}
+		while (*i != *b - 1)
+		{
+			ft_putlim(b, i);
+		}
+		*i = *i - 1;
+	}
 }
