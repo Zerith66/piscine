@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lmatkows <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 11:45:51 by hle-hena         ###   ########.fr       */
+/*   Created: 2024/07/20 13:26:54 by lmatkows          #+#    #+#             */
+/*   Updated: 2024/07/20 14:07:27 by lmatkows         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int *a, int *b);
+#include <unistd.h>
 
-int	main(void)
+void	ft_putchar(char c)
 {
-	int a = 2;
-	int b = 2;
-	
-	rush(&a, &b);
-	return (0);
+	write (1, &c, 1);
 }

@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 11:45:51 by hle-hena         ###   ########.fr       */
+/*   Created: 2024/07/17 09:53:11 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/19 21:40:43 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int *a, int *b);
+#include <unistd.h>
 
-int	main(void)
+void	ft_print_numbers(void)
 {
-	int a = 2;
-	int b = 2;
-	
-	rush(&a, &b);
-	return (0);
+	int	i;
+
+	i = 48;
+	while (i <= 57)
+	{
+		write(1, &i, 1);
+		i++;
+	}
 }
+
+/*int main(void)
+
+{
+	ft_print_numbers();
+}
+*/

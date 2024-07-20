@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 11:45:51 by hle-hena         ###   ########.fr       */
+/*   Created: 2024/07/17 09:08:57 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/19 21:40:41 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int *a, int *b);
+#include <unistd.h>
 
-int	main(void)
+void	ft_print_reverse_alphabet(void)
 {
-	int a = 2;
-	int b = 2;
-	
-	rush(&a, &b);
-	return (0);
+	int	c;
+
+	c = 'z';
+	while (c >= 'a')
+	{
+		write (1, &c, 1);
+		c--;
+	}
 }
+
+/*int main (void)
+{
+	ft_print_reverse_alphabet();
+}
+*/

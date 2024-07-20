@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
+/*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 08:01:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 12:09:12 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 11:45:47 by hle-hena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ void	ft_putchar(int *a, int *b, int *i)
 	{
 		write(1, "A", 1);
 	}
+	*a = *b;
+	*b = *i;
 }
 
 void	ft_putlim(int *b, int *i)
@@ -53,4 +55,5 @@ void	ft_putlim(int *b, int *i)
 	{
 		write(1, "B", 1);
 	}
+	*i = *i;
 }

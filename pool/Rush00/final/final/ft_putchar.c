@@ -1,34 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Rush00.c                                           :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hle-hena <hle-hena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 07:47:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 11:45:35 by hle-hena         ###   ########.fr       */
+/*   Created: 2024/07/20 11:51:17 by lmatkows          #+#    #+#             */
+/*   Updated: 2024/07/20 12:27:48 by hle-hena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putlim(int *b, int *i);
-void	ft_putchar(int *a, int *b, int *i);
+#include <unistd.h>
 
-void	rush(int *a, int *b)
+void	ft_putchar(char *c)
 {
-	int	*i;
-
-	i = b;
-	while (*i >= 1)
-	{
-		if (*i == 0 || *i == *b)
-		{
-			ft_putchar(a, b, i);
-			i--;
-		}
-		while (*i != *b - 1)
-		{
-			ft_putlim(b, i);
-		}
-		*i = *i - 1;
-	}
+	write(1, &c, 1);
 }
