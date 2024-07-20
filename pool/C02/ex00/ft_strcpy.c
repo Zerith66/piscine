@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/19 11:57:21 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 13:56:48 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/20 14:53:06 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
+char    *ft_strcpy(char *dest, char *src)
 {
-	int	div;
-	int	mod;
-
-	if (b != 0)
-	{
-		div = *a / *b;
-		mod = *a % *b;
-		*a = div;
-		*b = mod;
-	}
+    *dest = *src;
 }
