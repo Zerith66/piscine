@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 15:34:00 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/18 15:42:03 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 21:46:09 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,12 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = tmp;
 }
+
+/*int main(void)
+{
+	int a = 7;
+	int b = 9;
+	ft_swap(&a, &b);
+	write(1, &a, 1);
+	write(1, &b, 1);
+}*/

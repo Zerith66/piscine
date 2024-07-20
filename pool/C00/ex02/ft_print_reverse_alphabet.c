@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 09:08:57 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/17 14:03:57 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 21:40:41 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_print_reverse_alphabet(void)
 	}
 }
 
-/*void main (void)
+/*int main (void)
 {
 	ft_print_reverse_alphabet();
 }

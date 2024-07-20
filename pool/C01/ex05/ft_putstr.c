@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 09:54:09 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 10:57:26 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 07:45:14 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ void	ft_strlen(char*txt)
 	}
 }
 
-/*
 int	main(void)
 {
 	
-}*/
+}

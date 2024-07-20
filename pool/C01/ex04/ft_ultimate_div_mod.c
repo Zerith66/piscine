@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 08:55:12 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 21:40:35 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/19 11:57:21 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/19 21:33:20 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-
+void ft_ultimate_div_mod(int *a, int *b)
 {
-	write(1, &c, 1);
-}
+	int div;
+	int mod;
 
-/*int main(void)
-{
-	ft_putchar('M');
+	if (b != 0)
+	{
+		div = *a / *b;
+		mod = *a % *b;
+		*a = div;
+		*b = mod;
+	}
 }
-*/

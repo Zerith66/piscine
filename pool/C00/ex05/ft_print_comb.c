@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 16:20:49 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 07:35:16 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 21:40:47 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	ft_print_comb(void)
 	}
 }
 
-/*void	main(void)
+/*int	main(void)
 {
 	ft_print_comb();
 }*/

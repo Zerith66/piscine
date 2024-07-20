@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 15:24:35 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 11:07:35 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 21:37:30 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,26 +17,26 @@ void	ft_ultimate_ft(int *********nbr)
 
 /*int	main(void)
 {
-	int	nb;
-	int	*nb1;
-	int	**nb2;
-	int	***nb3;
-	int	****nb4;
-	int	*****nb5;
-	int	******nb6;
-	int	*******nb7;
-	int	********nb8;
-	int *********nb9;
+	int a, *b, **c, ***d, ****e, *****f, ******g, *******h, ********i, *********j;
 
-	nb = 42;
-	*nb1 = &nb;
-	**nb2 = &nb1;
-	***nb3 = &nb2;
-	****nb4 = &nb3;
-	*****nb5 = &nb4;
-	******nb6 = &nb5;
-	*******nb7 = &nb6;
-	********nb8 = &nb7;
+	j = &i;
+	i = &h;
+	h = &g;
+	g = &f;
+	f = &e;
+	e = &d;
+	d = &c;
+	c = &b;
+	b = &a;
 
-	ft_ultimate_ft();
+	ft_ultimate_ft(j);
+	if (a != 42)
+	{
+		write (1, "N\n", 2);
+	}
+	else
+	{
+		write (1, "Y\n",2 );
+	}
+
 }*/

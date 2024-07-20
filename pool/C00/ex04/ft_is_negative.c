@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 11:00:31 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 09:25:00 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/19 21:40:45 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_is_negative(int n)
 	}
 }
 
-/*void main (void)
+/*int main (void)
 {
 	ft_is_negative(0);
 }*/
