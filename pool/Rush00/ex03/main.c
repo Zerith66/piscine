@@ -6,9 +6,11 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 09:09:34 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 12:09:10 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	rush(int *a, int *b);
 
 int	main(void)
 {

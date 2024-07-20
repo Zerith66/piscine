@@ -6,9 +6,13 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 07:47:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 09:04:56 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 12:09:14 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putlim(int *b, int *i);
+
+void	ft_putlim(int *b, int *i);
 
 void	rush(int *a, int *b)
 {
