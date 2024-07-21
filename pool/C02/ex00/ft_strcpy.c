@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 15:54:34 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 18:59:04 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,11 @@ char    *ft_strcpy(char *dest, char *src)
         dest[i] = src[i];
         i++;
     }
+    return *dest;
 }
 
 /*int main(void)
 {
-    ft_strcpy();
+    ft_strcpy("F", "S");
+    return 0;
 }*/

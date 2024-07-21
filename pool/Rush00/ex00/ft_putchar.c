@@ -5,29 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 17:12:53 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 17:37:45 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/20 08:01:02 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/20 19:02:31 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(int *a)
-{
-    int	o;
+#include <unistd.h>
 
-	o = 0;
-	if (*a > 1)
-	{
-		write(1, "o", 1);
-		o++;
-		while (o <= *a - 1)
-		{
-			write(1, "-", 1);
-			o++;
-		}
-		write(1, "o", 1);
-	}
-	else
-	{
-		write(1, "o", 1);
-	}
+void	ft_putchar(char a)
+{
+	write(1, &a, 1);
 }

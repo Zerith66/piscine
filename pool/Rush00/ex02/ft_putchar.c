@@ -6,13 +6,13 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 08:01:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 18:38:42 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 19:02:31 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char *a)
+void	ft_putchar(char a)
 {
 	write(1, &a, 1);
 }

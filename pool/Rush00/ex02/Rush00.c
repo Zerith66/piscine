@@ -6,44 +6,58 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 07:47:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 18:39:15 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/20 19:51:30 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char *a);
+void	ft_putchar(char a);
 
-void	rush(int *a, int *b)
+void	rush(int a, int b)
 {
-	int	i;
-	int	o;
-	
-	i = 0;
-	o = 0;
-	while (o != 0)
+	int	x;
+	int	y;
+
+	x = 1;
+	y = 1;
+	while (x <= a)
 	{
-		if (i == 0 && o == *a)
+		if (x == 1 || x == a)
 		{
-			ft_putchar("A");
-			i++;
-			while (*b - 1 >i)
+			y = 1;
+			while (y <= b)
 			{
-				ft_putchar("B");
-				i++;
+				if (y == 1 || y == b)
+				{
+					ft_putchar('A');
+					y++;
+				}
+				else
+				{
+					ft_putchar('B');
+					y++;
+				}
 			}
-			ft_putchar("A");
-			o++;
+			ft_putchar('\n');
+			x++;
 		}
-		if (*a > 1 )
+		else
 		{
-			i = *b - 2;
-			ft_putchar("B");
-			while (*b - 1 >i)
+			y = 1;
+			while (y <= b)
 			{
-				ft_putchar(" ");
-				i--;
+				if (y == 1 || y == b)
+				{
+					ft_putchar('B');
+					y++;
+				}
+				else
+				{
+					ft_putchar(' ');
+					y++;
+				}
 			}
-			ft_putchar("B");
-			o++;
+			ft_putchar('\n');
+			x++;
 		}
 	}
 }

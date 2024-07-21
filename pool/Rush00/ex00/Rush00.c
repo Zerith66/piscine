@@ -5,27 +5,59 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 17:13:05 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 17:37:51 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/20 07:47:02 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/20 20:45:36 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    rush00(int *a, int *b)
-{
-    int	*i;
+void	ft_putchar(char a);
 
-	i = b;
-	while (*i >= 1)
+void	rush(int a, int b)
+{
+	int	x;
+	int	y;
+
+	x = 1;
+	y = 1;
+	while (x <= a)
 	{
-		if (*i == 0 || *i == *b)
+		if (x == 1 || x == a)
 		{
-			ft_putchar(a, b, i);
-			i--;
+			y = 1;
+			while (y <= b)
+			{
+				if (y == 1 || y == b)
+				{
+					ft_putchar('o');
+					y++;
+				}
+				else
+				{
+					ft_putchar('-');
+					y++;
+				}
+			}
+			ft_putchar('\n');
+			x++;
 		}
-		while (*i != *b - 1)
+		else
 		{
-			ft_putlim(b, i);
+			y = 1;
+			while (y <= b)
+			{
+				if (y == 1 || y == b)
+				{
+					ft_putchar('|');
+					y++;
+				}
+				else
+				{
+					ft_putchar(' ');
+					y++;
+				}
+			}
+			ft_putchar('\n');
+			x++;
 		}
-		*i = *i - 1;
 	}
 }
