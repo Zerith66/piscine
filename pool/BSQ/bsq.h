@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   bsq.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 21:32:34 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/21 06:31:14 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/21 08:19:10 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/21 09:29:09 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
-{
-	int	i;
+#ifndef bsq.h
+#define bsq.h
 
-	i = 0;
-	while (*str != '\n')
-	{
-		if (*str >= 65 && *str <= 90 || *str >= 97 && *str <= 122)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	if (*str == '\n')
-	{
-		return (2);
-	}
-}
+#include<unistd.h>
+#include<stdlib.h>
+#include<fcntl.h>
+
+int ft_strlen(char*txt);
+int map_error(char *message);
+#endif

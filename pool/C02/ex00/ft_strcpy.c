@@ -10,21 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (src != "\0")
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    return *dest;
+	i = 0;
+	while (src != "\0")
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	return (*dest);
 }
 
 /*int main(void)
 {
-    ft_strcpy("F", "S");
-    return 0;
+	ft_strcpy("F", "S");
+	return (0);
 }*/

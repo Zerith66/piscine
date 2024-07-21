@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 21:32:34 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/21 06:31:14 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/21 08:11:35 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/21 11:49:45 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_printable(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (*str != '\n')
 	{
-		if (*str >= 65 && *str <= 90 || *str >= 97 && *str <= 122)
+		if (65 <= *str <= 90 || 97 <= *str <= 122 || 57 >= *str >= 48 )
 		{
 			return (1);
 		}
