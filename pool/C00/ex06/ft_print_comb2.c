@@ -36,7 +36,7 @@ void	ft_print_comb2(void)
 			write(1, ", ", 2);
 		}
 		a++;
-		if(a == 100 )
+		if (a == 100)
 		{
 			a = b + 2;
 			b++;

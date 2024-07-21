@@ -6,13 +6,13 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 07:47:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 19:51:30 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/21 22:13:41 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char a);
+#include "rush.h"
 
-void	rush(int a, int b)
+void	rush00(int a, int b)
 {
 	int	x;
 	int	y;

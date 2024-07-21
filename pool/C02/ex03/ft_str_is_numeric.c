@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 03:21:27 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/21 06:32:21 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/21 22:13:43 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,13 @@ int	ft_str_is_numeric(char *str)
 	int	i;
 
 	i = 0;
-	while (*str != '\n')
+	while (str[i])
 	{
-		if (*str >= 48 && *str <= 57)
+		if (str[i] >= 48 && str[i] <= 57)
 		{
-			return (1);
+			return(0);
 		}
-		else
-		{
-			return (0);
-		}
+		i++;
 	}
-	if (*str == '\n')
-	{
-		return (2);
-	}
+	return (1);
 }

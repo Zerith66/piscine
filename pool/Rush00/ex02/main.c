@@ -6,11 +6,11 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 08:01:08 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 19:08:38 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/21 16:44:39 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int a, int b);
+#include "rush.h"
 
 int	main(void)
 {
@@ -19,6 +19,6 @@ int	main(void)
 
 	a = 8;
 	b = 9;
-	rush(a, b);
+	rush00(a, b);
 	return (0);
 }

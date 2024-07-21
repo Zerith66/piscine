@@ -1,51 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   rush.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 18:59:51 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 21:40:48 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/21 16:38:59 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/21 22:16:02 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef rush
+#define rush
+
 #include <unistd.h>
+#include <stdio.h>
 
-void	print(int z)
-{
-	write(1, &z, 1);
-}
-
-void	ft_print_comb2(void)
-{
-	int	a;
-	int	b;
-
-	a = 1;
-	b = 0;
-	while (b <= 98)
-	{
-		print(b / 10 + 48);
-		print(b % 10 + 48);
-		write(1, " ", 1);
-		print(a / 10 + 48);
-		print(a % 10 + 48);
-		if (b != 98)
-		{
-			write(1, ", ", 2);
-		}
-		a++;
-		if(a == 100 )
-		{
-			a = b + 2;
-			b++;
-		}
-	}
-}
-
-/*int	main(void)
-{
-	ft_print_comb2();
-}
-*/
+void	ft_putchar(char a);
+void	rush00(int a, int b);
+#endif

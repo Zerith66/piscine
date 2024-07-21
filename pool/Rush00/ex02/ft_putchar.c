@@ -6,11 +6,11 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 08:01:02 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 19:02:31 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/21 16:45:15 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "rush.h"
 
 void	ft_putchar(char a)
 {
