@@ -6,9 +6,11 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 09:42:29 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/21 12:26:32 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/22 08:38:49 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putchar(int z)
 {
@@ -42,8 +44,8 @@ void	ft_print_combn(int n)
 	if (n > 0 && n < 10)
 		ft_print_comb(n, '0', 0, number);
 }
-/*int main (void)
+int main (void)
 {
 	ft_print_combn(2);
 	return (0);
-}*/
+}

@@ -1,27 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/21 03:54:36 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 15:49:42 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/22 14:58:49 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/22 15:57:32 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+char	ft_strcapitalize(char *str)
 {
 	int	i;
+	int	m;
 
-	i = 0;
 	while (str[i])
 	{
-		if (!(str[i] >= 97 && str[i] <= 122))
+		if (str[i] == 0 || i == 0)
 		{
-			return (0);
+			i++;
+			str[i] -= 32;
 		}
-		i++;
+		else
+			i++;
 	}
-	return (1);
+	return (&str);
 }
+/*char main(void)
+{
+
+	ft_strcapitalize("une phrase sans importance");
+	while ()
+	{
+		
+	}
+	
+}*/
