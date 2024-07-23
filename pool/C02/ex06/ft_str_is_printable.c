@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 08:11:35 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 15:50:12 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 05:45:33 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ int	ft_str_is_printable(char *str)
 	while (str[i])
 	{
 		if (!(65 <= str[i] <= 90 || 97 <= str[i] <= 122 || 57 >= str[i] >= 48))
-		{
 			return (0);
-		}
 		i++;
 	}
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 04:01:21 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 15:49:47 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 05:45:00 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ int	ft_str_is_uppercase(char *str)
 	while (str[i])
 	{
 		if (!(str[i] >= 65 && str[i] <= 90))
-		{
 			return (0);
-		}
 		i++;
 	}
 	return (1);
