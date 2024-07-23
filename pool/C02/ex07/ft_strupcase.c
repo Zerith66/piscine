@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 22:27:47 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 15:54:57 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 03:50:57 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strupcase(char *str)
 		else
 			i++;
 	}
-	return (&str);
+	return (str);
 }
 /*int main(void)
 {

@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 12:23:37 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 15:55:55 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 03:51:02 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strlowcase(char *str)
 		else
 			i++;
 	}
-	return (&str);
+	return (str);
 }
 /*int main(void)
 {
