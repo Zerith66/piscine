@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 17:17:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 04:29:32 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 04:54:11 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@ unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
 
     i = 0;
 
-    while (src[i])
+    while (src[i] && i <= size)
     {
-        dest[i] = src[i]
+        dest[i] = src[i];
         i++;
     }
     while (i <= size)
     {
-        dest[i] = '\0'
+        dest[i] = '\0';
         i++;
     }
-    return (*dest)
+    return (*dest);
 }
 #include <unistd.h>
 
@@ -36,12 +36,12 @@ int main(void)
     char src;
     unsigned int size;
 
-    dest = ""
-    src = "Hello world"
-    size = 14
-    ft_strlcpy(&dest, &src, size)
+    dest = "";
+    src = "Hello world";
+    size = 14;
+    ft_strlcpy(&dest, &src, size);
     if (dest == "Hello world   ")
         write(1, "y\n", 2);
     else
-        write(1, "n\n", 2)
+        write(1, "n\n", 2);
 }

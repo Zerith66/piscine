@@ -6,11 +6,11 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 15:42:13 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/20 14:03:04 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 04:50:01 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	if (b != 0)
 	{
@@ -18,3 +18,8 @@ void    ft_div_mod(int a, int b, int *div, int *mod)
 		*mod = a % b;
 	}
 }
+/*int main (void)
+{
+	ft_div_mod();
+	printf("%n" &div);
+}*/

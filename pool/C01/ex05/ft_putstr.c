@@ -6,20 +6,20 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 09:54:09 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/21 09:29:26 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 04:47:09 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	ft_strlen(char*txt)
+void	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (txt[i] != '\0')
+	while (str[i] != '\0')
 	{
-		write (1, txt[i], 1);
+		write (1, &str[i], 1);
 		i++;
 	}
 }

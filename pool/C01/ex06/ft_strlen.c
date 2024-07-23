@@ -6,18 +6,16 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 05:49:52 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 03:46:12 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/23 04:48:26 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-unsigned int	ft_strlen(char*txt)
+int	ft_strlen(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (txt[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
