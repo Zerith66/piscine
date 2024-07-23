@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 07:06:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 16:18:10 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/23 14:32:37 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/23 16:34:46 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+#include<unistd.h>
+#include<stdlib.h>
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+char gen_map(char *code);
+
+int mess_error(char *str)
+{
+    int i;
+    i = -1;
+    while (str[++i])
+        write(1, &str[i], 1);
+    exit;
 }
-
-char *ft_strcat(char *dest, char *src)
+int main (void)
 {
-    int len;
-    len = ft_strlen(*dest);
-    while (/* condition */)
-    {
-        /* code */
-    }
+    char *pcond;
     
+    pcond = "1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7";
+    gen_map(pcond);
+    return (0);
 }

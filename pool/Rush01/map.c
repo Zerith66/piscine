@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   map.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 07:06:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 16:18:10 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/23 14:32:22 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/23 17:46:36 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+#include <stdlib.h>
+#define X 6
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+int	only_num(char *str);
+
+char gen_map(char *code)
+{
+	int i;
+	i = 1;
+	only_num(code);
+	
+}
+char hight(char *tab, char haut)
+{
+	
 }
 
-char *ft_strcat(char *dest, char *src)
-{
-    int len;
-    len = ft_strlen(*dest);
-    while (/* condition */)
-    {
-        /* code */
-    }
-    
-}

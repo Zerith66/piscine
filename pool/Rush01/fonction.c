@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   fonction.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 07:06:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 16:18:10 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/23 14:32:20 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/23 16:41:28 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int mess_error(char *str);
+
+char	only_num(char *str, char *dest)
 {
-	int	i;
+	int i;
+	int max;
 
 	i = 0;
-	while (str[i] != '\0')
+	max = 16;
+	while (str[i])
 	{
+		if (!(str[i] >= 48 && str[i] <= 57))
+		{
+			mess_error("please put any numbers in");
+		}
 		i++;
+		if (max < i)
+		{
+			dest[i] == str[i];
+			i++;
+			if (str[i] == ' ')
+				i++;
+			else
+				mess_error("invalide syntaxe");
+		}
 	}
-	return (i);
+	return (*dest);
 }
 
-char *ft_strcat(char *dest, char *src)
-{
-    int len;
-    len = ft_strlen(*dest);
-    while (/* condition */)
-    {
-        /* code */
-    }
-    
-}
