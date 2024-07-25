@@ -6,15 +6,15 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 21:03:36 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/24 21:49:46 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 08:49:03 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcat(char *dest, char *src, unsigned int nb)
+char	*ft_strcat(char *dest, char *src, unsigned int nb)
 {
-	int i;
-	int j;
-	
+	int	i;
+	int	j;
+
 	j = 0;
 	i = 0;
 	while (dest[i] != '\0')

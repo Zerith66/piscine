@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 12:23:37 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 03:51:02 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 08:26:44 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	ft_strlowcase(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (97 <= str[i] <= 122)
+		if (65 <= str[i] <= 90)
 		{
-			str[i] -= 32;
+			str[i] += 32;
 			i++;
 		}
 		else

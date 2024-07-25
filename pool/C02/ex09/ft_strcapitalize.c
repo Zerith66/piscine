@@ -6,14 +6,13 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:58:49 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 03:50:48 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 08:29:54 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	ft_strcapitalize(char *str)
 {
 	int	i;
-	int	m;
 
 	while (str[i])
 	{

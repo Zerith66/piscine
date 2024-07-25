@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 22:27:47 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 03:50:57 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 08:26:48 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	ft_strupcase(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (65 <= str[i] <= 90)
+		if (97 <= str[i] <= 122)
 		{
-			str[i] += 32;
+			str[i] -= 32;
 			i++;
 		}
 		else

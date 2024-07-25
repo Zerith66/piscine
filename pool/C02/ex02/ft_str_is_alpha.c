@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 21:32:34 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 15:49:32 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 08:33:50 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (!(str[i] >= 65 && str[i] <= 90 || str[i] >= 97 && str[i] <= 122))
+		if (!(65 <= str[i] <= 90 || 97 <= str[i] <= 122))
 		{
 			return (0);
 		}
