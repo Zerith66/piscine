@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 14:03:09 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/25 10:09:59 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/25 13:49:19 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_atoi(char *str)
 {
 	int	i;
+	int sign;
 
+	sign = 0;
 	i = 0;
-	while (src[i])
+	while (!(8 < str[i] < 13))
 	{
-		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (*dest);
+	if (str[i] == '-')
+	{
+		
+		i++;
+	}
+	
 }
-
-/*int main(void)
-{
-	ft_strcpy("F", "S");
-	return (0);
-}*/

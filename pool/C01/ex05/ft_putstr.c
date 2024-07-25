@@ -6,11 +6,11 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 09:54:09 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 04:47:09 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 14:03:10 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include<unistd.h>
 
 void	ft_putstr(char *str)
 {

@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 05:33:01 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 08:45:08 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/25 14:03:06 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@ int	ft_strcmp(char *s1, char *s2, unsigned int n)
 	int	i;
 
 	i = 0;
-	while (s1[n] || s2[n])
+	while (s1[i] || s2[i] && i < n)
 	{
-		if (s1[n] != s2[n])
+		if (s1[i] != s2[i] )
 		{
-			return (s1[n] - s2[n]);
+			return (s1[i] - s2[i]);
 		}
 		i++;
 	}

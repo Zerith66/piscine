@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 14:03:09 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/25 11:34:11 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/25 13:52:25 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_recursive_factorial(char nb)
 {
-	int	i;
+	int	r;
 
-	i = 0;
-	while (src[i])
+	r = 1;
+	if (nb < 0)
 	{
-		dest[i] = src[i];
-		i++;
+		return (0);
 	}
-	dest[i] = '\0';
-	return (*dest);
+	else if (nb != 0)
+	{
+		r = r * ft_recursive_factorial(nb - 1);
+		nb--;
+	}
+	else
+		return(1);
+	return (r);
 }
-
-/*int main(void)
-{
-	ft_strcpy("F", "S");
-	return (0);
-}*/

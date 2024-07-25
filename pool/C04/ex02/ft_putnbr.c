@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:11:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 14:03:09 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/25 11:38:06 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/25 14:03:04 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (*dest);
+void	print_nb(int b)
+{
+	write(1, &b, 1);
 }
 
-/*int main(void)
+void	ft_putnbr(int nb)
 {
-	ft_strcpy("F", "S");
-	return (0);
-}*/
+	if (nb < 0)
+	{
+		write (1, "-", 1);
+		nb = -nb;
+	}
+	if (nb > 10)
+	{
+		ft_putnbr(nb / 10);
+	}
+	print_nb(nb % 10 + 48);
+}
