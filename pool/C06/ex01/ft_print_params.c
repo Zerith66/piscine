@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 17:27:01 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 17:36:27 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/26 09:19:29 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	main(int ac, char **av)
 	i = 1;
 	while (av[i])
 		write(1, av[i++], ft_strlen(av[i]));
+		write(1, '\n', 1);
 	write(1, "\n", 1);
 	return (0);
 }
