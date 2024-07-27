@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 14:32:20 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 16:41:28 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/27 16:21:21 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@ char	only_num(char *str, char *dest)
 	int max;
 
 	i = 0;
-	max = 16;
+	max = 32;
 	while (str[i])
 	{
-		if (!(str[i] >= 48 && str[i] <= 57))
+		if (!(str[i] >= 49 && str[i] <= 53))
 		{
 			mess_error("please put any numbers in");
 		}
-		i++;
 		if (max < i)
 		{
 			dest[i] == str[i];
@@ -39,3 +38,14 @@ char	only_num(char *str, char *dest)
 	return (*dest);
 }
 
+int ft_strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
+}

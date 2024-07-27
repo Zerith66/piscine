@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 12:23:37 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/27 23:11:47 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/27 16:58:04 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/27 17:08:44 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+int ft_fibonacci(int index)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (65 <= str[i] && str[i] <= 90)
-		{
-			str[i] += 32;
-			i++;
-		}
-		else
-			i++;
-	}
-	return (str);
+    if (index < 0)
+        return (0);   
+    if (index <= 1)
+        return (1);
+    return(ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
-/*int main(void)
-{
-	ft_strupcase("HELLO WORLD");
-	return (0);
-}*/

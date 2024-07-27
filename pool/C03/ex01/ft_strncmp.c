@@ -6,22 +6,19 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 05:33:01 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 16:27:44 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/27 23:23:38 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
-
-	i = 0;
-	while (s1[i] || s2[i] && i < n)
+	while (*s1 && *s2 && *s1 == *s2 && n > 1)
 	{
-		if (s1[i] != s2[i])
-		{
-			return (s1[i] - s2[i]);
-		}
-		i++;
+		s1++;
+		s2++;
+		n--;
 	}
-	return (0);
+	if (n == 0)
+		return (0);
+	return (*s1 - *s2);
 }

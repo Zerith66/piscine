@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 14:32:37 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 16:34:46 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/27 12:20:21 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,8 @@ int mess_error(char *str)
         write(1, &str[i], 1);
     exit;
 }
-int main (void)
+int main (int ac, char **av)
 {
-    char *pcond;
-    
-    pcond = "1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7";
-    gen_map(pcond);
+    gen_map(**av);
     return (0);
 }

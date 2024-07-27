@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   structure.c                                        :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 17:22:03 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/23 17:27:51 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/27 16:43:37 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/27 16:56:27 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-typedef struct gen_map_var
+int	ft_recursive_power(int nb, int power)
 {
-    char [6][6] **tab;
-    int x;
-    int y;
-}       gen_map_var;
+	int res;
+
+	res = 0;
+	if (power < 0)
+		return (0);
+	if (power == 0 && nb == 0)
+		return (1);
+	while (power != 0)
+	{
+		res = res * ft_recursive_power(1, power - 1);
+		power--;
+	}
+	return (res);
+}

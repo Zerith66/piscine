@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 12:23:37 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/27 23:11:47 by tbourill         ###   ########.fr       */
+/*   Created: 2024/07/27 08:19:41 by tbourill          #+#    #+#             */
+/*   Updated: 2024/07/27 16:56:39 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+int	ft_iterative_power(int nb, int power)
 {
-	int	i;
+	int res;
 
-	i = 0;
-	while (str[i])
+	res = 0;
+	if (power < 0)
+		return (0);
+	if (power == 0 && nb == 0)
+		return (1);
+	while (power - 1 != 0)
 	{
-		if (65 <= str[i] && str[i] <= 90)
-		{
-			str[i] += 32;
-			i++;
-		}
-		else
-			i++;
+		res = res * nb;
+		power--;
 	}
-	return (str);
+	return (res);
 }
-/*int main(void)
+
+int main(void)
 {
-	ft_strupcase("HELLO WORLD");
+	ft_iterative_power(2,4);
 	return (0);
-}*/
+}
