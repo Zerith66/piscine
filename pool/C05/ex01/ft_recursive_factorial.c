@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 11:34:11 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 13:52:25 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 00:17:58 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,5 @@ int	ft_recursive_factorial(char nb)
 		r = r * ft_recursive_factorial(nb - 1);
 		nb--;
 	}
-	else
-		return(1);
 	return (r);
 }

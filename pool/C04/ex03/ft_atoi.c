@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 10:09:59 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 16:29:00 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 00:04:27 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,22 @@ int	ft_atoi(char *str)
 	int	sign;
 	int	nbint;
 
-	sign = 0;
 	i = 0;
+	sign = 1;
 	nbint = 0;
-	while (!(8 < str[i] < 13))
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
+		if (str[i] == '-')
+		{
+			sign = -sign;
+		}
 		i++;
 	}
-	if (str[i] == '-')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		sign = -1;
-		i++;
-	}
-	while (48 <= str[i] && str[i] <= 57)
-	{
-		nbint = nbint * 10 + (str[i] - 48);
+		nbint = nbint * 10 + (str[i] - '0');
 		i++;
 	}
 	return (sign * nbint);

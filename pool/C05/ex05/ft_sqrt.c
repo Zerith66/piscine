@@ -6,25 +6,26 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 17:19:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/27 18:00:42 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 00:14:30 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (nb <= 0)
-    {
-        return(0);
-    }
-    while (i * i > nb)
-    {
-        if (i * i == nb)
-        {
-            return (nb);
-        }
-        i++;
-    }
+	i = 0;
+	if (nb <= 0)
+	{
+		return (0);
+	}
+	while (i * i > nb)
+	{
+		if (i * i == nb)
+		{
+			return (nb);
+		}
+		i++;
+	}
+	return(0);
 }

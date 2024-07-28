@@ -6,13 +6,13 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 08:19:41 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/27 16:56:39 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 00:09:32 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_power(int nb, int power)
 {
-	int res;
+	int	res;
 
 	res = 0;
 	if (power < 0)
@@ -27,8 +27,8 @@ int	ft_iterative_power(int nb, int power)
 	return (res);
 }
 
-int main(void)
+/*int main(void)
 {
 	ft_iterative_power(2,4);
 	return (0);
-}
+}*/

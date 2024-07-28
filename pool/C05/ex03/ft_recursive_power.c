@@ -6,13 +6,13 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 16:43:37 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/27 16:56:27 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 00:10:26 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_power(int nb, int power)
 {
-	int res;
+	int	res;
 
 	res = 0;
 	if (power < 0)
