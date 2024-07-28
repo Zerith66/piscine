@@ -6,33 +6,32 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 16:50:46 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/19 09:25:14 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 02:34:34 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	print_nb(int b)
+void	ft_putchar(int b)
 {
 	write(1, &b, 1);
 }
 
 void	ft_putnbr(int nb)
 {
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
 	if (nb < 0)
 	{
-		write (1, "-", 1);
+		ft_putchar('-');
 		nb = -nb;
 	}
-	if (nb > 10)
+	if (nb >= 10)
 	{
 		ft_putnbr(nb / 10);
 	}
-	print_nb(nb % 10 + 48);
+	ft_putchar((nb % 10) + '0');
 }
-
-/*int	main(void)
-{
-	ft_putnbr(-492);
-	return (0);
-}*/

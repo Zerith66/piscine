@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 09:42:29 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/22 08:38:49 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 02:38:04 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ void	ft_print_comb(int n, int start, int depth, char *number)
 
 void	ft_print_combn(int n)
 {
-	char	number[n ];
+	char	number[10];
 
 	if (n > 0 && n < 10)
 		ft_print_comb(n, '0', 0, number);
 }
-int main (void)
+/*int main (void)
 {
 	ft_print_combn(2);
 	return (0);
-}
+}*/
