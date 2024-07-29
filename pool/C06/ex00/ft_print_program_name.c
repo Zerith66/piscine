@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 16:53:34 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/25 17:37:06 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/29 13:21:09 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ int	ft_strlen(char *str)
 
 int	main(int ac, char **av)
 {
-	write(1, av[0], ft_strlen(av[0]));
-	write(1, "\n", 1);
+	if(ac == 1)
+	{
+		write(1, av[0], ft_strlen(av[0]));
+		write(1, "\n", 1);
+	}
 }
