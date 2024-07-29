@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 17:19:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/28 08:45:46 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/29 12:50:55 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ int	ft_sqrt(int nb)
 	{
 		return (0);
 	}
-	while (i * i > nb)
+	while (i * i <= nb)
 	{
 		if (i * i == nb)
 		{
-			return (nb);
+			return (i);
 		}
 		i++;
 	}
