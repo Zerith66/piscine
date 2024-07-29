@@ -6,25 +6,25 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 21:03:36 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/28 02:53:35 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 08:13:32 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src, unsigned int nb)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int				i;
-	unsigned int	j;
+	char			*r;
+	unsigned int	i;
 
-	j = 0;
-	i = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0' && j < nb)
+	r = dest;
+	i = -1;
+	while (*dest)
+		dest++;
+	while (*src && ++i < nb)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
 	dest[i] = '\0';
-	return (dest);
+	return (r);
 }

@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 17:19:16 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/28 00:14:30 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 08:45:46 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int	ft_sqrt(int nb)
 		}
 		i++;
 	}
-	return(0);
+	return (0);
 }

@@ -6,23 +6,15 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 11:34:11 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/28 00:17:58 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/28 08:45:53 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_factorial(char nb)
 {
-	int	r;
-
-	r = 1;
 	if (nb < 0)
-	{
 		return (0);
-	}
-	else if (nb != 0)
-	{
-		r = r * ft_recursive_factorial(nb - 1);
-		nb--;
-	}
-	return (r);
+	if (nb == 0)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
 }
