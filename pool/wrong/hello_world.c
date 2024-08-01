@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 15:18:29 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/31 12:10:07 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:58:09 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,13 @@ char	trkl_c_est_golri(char fjdfgboiahgvoiahghfoauyguhaisddvh)
 char	aidhgbaejihghaelihgalers(char sdfiguhsrioughsiuhgiushgijahkerghauihhg)
 {
 	char	adifughiauehgilaeeig;
+	int rand_max;
 
+	rand_max = 250;
 	srand(time(NULL));
 	while (sdfiguhsrioughsiuhgiushgijahkerghauihhg != adifughiauehgilaeeig)
 	{
-		adifughiauehgilaeeig = 0 % 200;
+		adifughiauehgilaeeig = rand(rand_max);
 	}
 	return (sdfiguhsrioughsiuhgiushgijahkerghauihhg);
 }
