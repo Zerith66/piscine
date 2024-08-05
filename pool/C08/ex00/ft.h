@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   atoi.c                                             :+:      :+:    :+:   */
+/*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/04 15:04:56 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/04 23:50:58 by tbourill         ###   ########.fr       */
+/*   Created: 2024/08/05 09:48:51 by tbourill          #+#    #+#             */
+/*   Updated: 2024/08/05 09:52:37 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *nbr)
-{
-	int	i;
-	int	intnbr;
-	int	sign;
+#ifndef FT_H
+# define FT_H
 
-	i = -1;
-	sign = 1;
-	while (nbr[++i])
-	{
-		if (nbr[i] == "-")
-			sign = -sign;
-		if (nbr[i] >= 48 && nbr[i] <= 57)
-			intnbr = intnbr * 10 + (nbr[i] - 48);
-	}
-	return (intnbr * sign);
-}
+void	ft_putchar(char c);
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
+
+#endif
