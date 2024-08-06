@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   uti4.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
+/*   By: axlleres <axlleres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 21:32:34 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/05 12:54:05 by tbourill         ###   ########.fr       */
+/*   Created: 2024/08/04 18:43:00 by axlleres          #+#    #+#             */
+/*   Updated: 2024/08/04 18:49:31 by axlleres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
-{
-	int	i;
+#include <stdlib.h>
 
-	i = -1;
-	while (str[++i])
+char	*ft_strdup(char *s, int len)
+{
+	char	*res;
+	int		i;
+
+	i = 0;
+	res = malloc(sizeof(char) * (len + 1));
+	res[len] = '\0';
+	while (i < len)
 	{
-		if (!((65 <= str[i] && str[i] <= 90)
-				|| (97 <= str[i] && str[i] <= 122)))
-			return (0);
+		res[i] = s[i];
+		i++;
 	}
-	return (1);
+	return (res);
 }
