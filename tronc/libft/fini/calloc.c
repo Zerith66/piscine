@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/04 16:06:44 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/04 17:44:11 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/08/07 22:04:41 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_calloc(int num)
 
 	i = -1;
 	str = malloc(num * sizeof(char));
-	if (!(*str));
+	if (!(*str))
 		return (NULL);
 	str[num] = "\0";
 	while (str[++i])
