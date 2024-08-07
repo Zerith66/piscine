@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 13:48:36 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/03 15:00:33 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/08/06 19:39:51 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char *ft_atoa(char *nbr)
 	j = 0;
 	while (nbr[i])
 	{
-		if (nbr[i] == "-" || nbr[i] == ".")
+		if (nbr[i] == "-" || nbr[i] == "." || nbr == "")
 		{
 			error_message("Error");
 			return (NULL);
@@ -36,3 +36,4 @@ char *ft_atoa(char *nbr)
 	}
 	return (dest);
 }
+

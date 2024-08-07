@@ -6,15 +6,25 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 14:20:50 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/01 15:08:01 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/08/07 16:25:20 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_strlen(char *str)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
+}
+
+int	ft_strlen(char *str)
+{
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -22,36 +32,43 @@ int ft_strlen(char *str)
 	return (i);
 }
 
-char *tri(char **liste)
+char	**tri(char **str)
 {
-	char **trie;
-	int i;
-	int j;
+	int		i;
+	int		j;
+	char	*tmp;
 
-	i = 0;
-	j = 0;
-	while (liste[i])
+	i = 1;
+	while (str[i])
 	{
-		while (trie[j])
+		j = 2;
+		while (str[j])
 		{
-			
+			if (ft_strcmp(str[j], str[j - 1]) > 0)
+			{
+				tmp = str[j - 1];
+				str[j - 1] = str[j];
+				str[j] = tmp;
+			}
+			j++;
 		}
 		i++;
 	}
-	
+	return (str);
 }
 
-int main (int ac, char **av)
+int	main(int ac, char **av)
 {
-	int i;
-	char **triee;
+	int		i;
+	char	**sorted;
 
-	i = ac;
-	triee = tri(**av);
-	while (i > 1)
+	i = ac - 1;
+	sorted = tri(av);
+	while (i >= 1)
 	{
-		write(1, av[i], ft_strlen(av[i]));
+		write(1, sorted[i], ft_strlen(sorted[i]));
+		write(1, "\n", 1);
 		i--;
 	}
-	return(0);
+	return (0);
 }
