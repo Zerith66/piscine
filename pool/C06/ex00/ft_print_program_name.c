@@ -24,7 +24,7 @@ int	ft_strlen(char *str)
 
 int	main(int ac, char **av)
 {
-	if(ac == 1)
+	if (ac == 1)
 	{
 		write(1, av[0], ft_strlen(av[0]));
 		write(1, "\n", 1);
