@@ -6,7 +6,20 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 21:41:33 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/07 21:42:30 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/08/08 00:37:35 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*tolower(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] >= 97 && str[i] <= 122)
+			str[i] -= 32;
+		i++;
+	}
+	return (str);
+}

@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   toupper.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/30 10:13:50 by tbourill          #+#    #+#             */
-/*   Updated: 2024/08/08 19:52:38 by tbourill         ###   ########.fr       */
+/*   Created: 2024/08/07 21:33:49 by tbourill          #+#    #+#             */
+/*   Updated: 2024/08/08 00:38:25 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	ft_strlen(char *str)
+char	*tolower(char *str)
 {
 	int	i;
 
-	i = -1;
-	while (str[++i]);
-	return (i);
-}
-
-char	*ft_strdup(char *src)
-{
-	char	*str;
-	char	*ret;
-
-	str = (char *)malloc(ft_strlen(src) + 1);
-	if (!str)
-		return (NULL);
-	ret = str;
-	while (*src)
-		*str++ = *src++;
-	*str = 0;
-	return (ret);
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] >= 65 && str[i] <= 90)
+			str[i] += 32;
+		i++;
+	}
+	return (str);
 }

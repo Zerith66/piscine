@@ -6,7 +6,7 @@
 /*   By: tbourill <terry.bourillon@outlook.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 14:31:42 by tbourill          #+#    #+#             */
-/*   Updated: 2024/07/31 14:49:57 by tbourill         ###   ########.fr       */
+/*   Updated: 2024/08/08 19:54:39 by tbourill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,18 @@
 int	*ft_range(int min, int max)
 {
 	int	*tab;
-	int	i;
+	int	*ret;
 
-	i = max - min;
-	*tab = (int *)malloc(sizeof(max));
-	i = 0;
-	while (min != max)
+	if (min >= max)
+		return (NULL);
+	max = max - min;
+	tab = (int *)malloc(max * sizeof(int));
+	ret = tab;
+	while (max)
 	{
-		tab[i] = min;
-		min++;
-		i++;
+		*tab++ = min++;
+		max--;
 	}
-	free(tab);
+	return (ret);
+	free (tab);
 }
